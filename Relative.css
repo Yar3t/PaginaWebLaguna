@@ -1,0 +1,136 @@
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 900px){
+    #info-nuestra .text{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #info-nuestra .imagen{
+        background-image: url("imagenes/int2.jpg");
+        background-size:cover;
+        background-position: center center;
+        height: 400px;
+        width: 500px;
+    }
+
+    #actividades .activi{
+        display: flex;
+        justify-content: center;
+    }
+
+    #actividades p{
+        display: block;
+        margin-bottom: -30px;
+    }
+
+    #actividades h2{
+        font-size: 4em;
+    }
+
+    #actividades h3{
+        margin-top: 0;
+    }
+
+    #actividades .act{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 1);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .act:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.7)
+        )
+        ,url("imagenes/arqueologia.jpg");
+
+    }
+
+    .act:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.7)
+        )
+        ,url("imagenes/laguna.jpg");
+    }
+
+    .act:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.7)
+        )
+        ,url("imagenes/gastronomia.jpg");
+
+    }
+}
+
+@media (min-width: 650px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #info-nuestra .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #info-nuestra h2{
+        margin-top: 0px;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+
+}
+
+@media (max-width: 650px){
+    #actividades p{
+        display: none;
+    }
+}
